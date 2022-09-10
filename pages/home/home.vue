@@ -8,8 +8,16 @@
 	export default {
 		data() {
 			return {
-				
+				swiperList: []
 			};
+		},
+		onLoad() {
+			this.getSwiperList()
+		},
+		methods: {
+			getSwiperList() {
+				uni.$http.get('')
+			}
 		}
 	}
 </script>
