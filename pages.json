@@ -1,15 +1,24 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-            "path" : "pages/home/home"
-        }
-        ,{
-            "path" : "pages/knowledge/knowledge"
-        }
-        ,{
-            "path" : "pages/my/my"
-        }
-    ],
+			"path": "pages/home/home"
+		}, {
+			"path": "pages/knowledge/knowledge"
+		}, {
+			"path": "pages/my/my"
+		}
+	],
+	"subPackages": [{
+		"root": "subpkg",
+		"pages": [{
+			"path": "detail/detail",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}]
+	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "服药小哥",
@@ -18,8 +27,7 @@
 	},
 	"tabBar": {
 		"selectedColor": "#000",
-		"list": [
-			{
+		"list": [{
 				"pagePath": "pages/home/home",
 				"text": "首页",
 				"iconPath": "static/home.png",
@@ -30,7 +38,7 @@
 				"text": "药物知识",
 				"iconPath": "static/pill.png",
 				"selectedIconPath": "static/_pill.png"
-			},{
+			}, {
 				"pagePath": "pages/my/my",
 				"text": "我的管理",
 				"iconPath": "static/my.png",

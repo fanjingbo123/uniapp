@@ -8,7 +8,7 @@ import {
 uni.$http = $http
 
 //请求的根路径
-$http.baseUrl = 'https://www.uinav.com'
+$http.baseUrl = 'https://api-ugo-web.itheima.net'
 
 
 $http.beforeRequest = function() {
@@ -20,6 +20,14 @@ $http.beforeRequest = function() {
 
 $http.afterRequest = function() {
 	uni.hideLoading()
+}
+
+uni.$showMsg = function(title = '请稍后再试', duration = 1500) {
+	uni.showToast({
+		title,
+		duration,
+		icon: 'none'
+	})
 }
 
 // #ifndef VUE3
