@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000">
+		<swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000" circular="true">
 			<swiper-item>
 				<view class="swiper-item">
 					<image
@@ -51,9 +51,9 @@
 
 				console.log(res)
 
-				if (res.meta.status !== 200) {
-					uni.$showMsg()
-				}
+				// if (res.meta.status !== 200) {
+				// 	uni.$showMsg()
+				// }
 
 				console.log(res.meta.status)
 				console.log(res.message)
