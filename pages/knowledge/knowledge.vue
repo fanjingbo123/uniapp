@@ -4,59 +4,28 @@
 			<!-- 左侧滑动区 -->
 			<scroll-view class="left-scroll-view" scroll-y="true" :style="{height: wh + 'px'}">
 				<block v-for="(item, i) in cateList" :key="i">
-					<view :class="['left-scroll-view-item', i === active ? 'active' : '']" @click="activeChange(i)">{{item.name}}</view>
+					<view :class="['left-scroll-view-item', i === active ? 'active' : '']" @click="activeChange(i)">
+						{{item.cate}}
+					</view>
 				</block>
 				<!-- <view class="left-scroll-view-item">降压药</view> -->
 			</scroll-view>
 			<!-- 右侧滑动区 -->
 			<scroll-view scroll-y="true" :style="{height: wh + 'px'}">
-				<view>
-					<view>
-						<!-- <image src="https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsWicRIL7WR816Bf9LWV2weNsUuR1ib99pRDxED0B1ZbXgST5wQxLUw3zmB2X0ib2CnXGqryjJanZxWouQ/0?wx_fmt=png"></image> -->
+				<block v-for="(item, j) in medicineList" :key="j">
+					<view class="medicine_msg">
+						<view class="medicine_img">
+							<image
+								src="https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png">
+							</image>
+						</view>
+						<view>
+							<view>{{item.medicine_msg}}</view>
+							<view>xxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
+						</view>
 					</view>
-					<view>
-						<view>xxx</view>
-						<view>xxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
-					</view>
-				</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
-				<view>yyy</view>
+				</block>
+
 				<view>yyy</view>
 				<view>yyy</view>
 				<view>yyy</view>
@@ -70,35 +39,63 @@
 		data() {
 			return {
 				wh: 0,
+				medicineList: [],
 				cateList: [{
-						name: '降压药'
+						cate: '降压药',
+						List: [{
+							medcine_url: '../static/yaopian.png',
+							medicine_name: '',
+							medicine_msg: '降压药'
+						}, {
+							medcine_url: '../static/yaopian.png',
+							medicine_name: '',
+							medicine_msg: '降压药'
+						}]
 					},
 					{
-						name: '降糖药'
+						cate: '降糖药',
+						List: [{
+							medcine_url: '../static/yaopian.png',
+							medicine_name: '',
+							medicine_msg: '降糖药'
+						}, {
+							medcine_url: '../static/yaopian.png',
+							medicine_name: '',
+							medicine_msg: '降糖药'
+						}, {
+							medcine_url: '../static/yaopian.png',
+							medicine_name: '',
+							medicine_msg: '降糖药'
+						}]
 					},
 					{
-						name: '降脂药'
+						cate: '降脂药',
+						List: [{
+							medcine_url: '../static/yaopian.png',
+							medicine_name: '',
+							medicine_msg: '降脂药'
+						}]
 					},
 					{
-						name: '麻醉药'
+						cate: '麻醉药'
 					},
 					{
-						name: '抗生素'
+						cate: '抗生素'
 					},
 					{
-						name: '消炎药'
+						cate: '消炎药'
 					},
 					{
-						name: '保健品'
+						cate: '保健品'
 					},
 					{
-						name: '中药'
+						cate: '中药'
 					},
 					{
-						name: '其他药物'
+						cate: '其他药物'
 					},
 				],
-				medicineList: [],
+				// medicineList: [],
 				active: 0
 			};
 		},
@@ -106,10 +103,12 @@
 			const sysInfo = uni.getSystemInfoSync()
 			// console.log(sysInfo)
 			this.wh = sysInfo.windowHeight
-		},	
+		},
 		methods: {
 			activeChange(i) {
 				this.active = i
+				//切换分类
+				this.medicineList = this.cateList[i].List
 			}
 		}
 	}
@@ -138,13 +137,23 @@
 					display: block;
 					width: 3px;
 					height: 30px;
-					background-color: #C00000;
+					background-color: #c17113;
 					position: absolute;
 					top: 50%;
 					left: 0;
 					transform: translateY(-50%);
 				}
 			}
+		}
+	}
+
+	.medicine_msg {
+		display: flex;
+		height: 50rpx;
+		
+		.medicine_img {
+			width: 25rpx;
+			height: 80%;
 		}
 	}
 </style>

@@ -3,7 +3,10 @@
 		{
 			"path": "pages/home/home"
 		}, {
-			"path": "pages/knowledge/knowledge"
+			"path": "pages/knowledge/knowledge",
+			"style": {
+				"enablePullDownRefresh": true
+			}
 		}, {
 			"path": "pages/my/my"
 		}
