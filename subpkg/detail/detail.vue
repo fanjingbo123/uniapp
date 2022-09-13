@@ -56,7 +56,7 @@
 			// }
 			onClick(e) {
 				if(e.content.text === '药物管理'){
-					uni.switchTab({
+					uni.navigateTo({
 						url: '/pages/medicineManage/medicineManage'
 					})
 				}
