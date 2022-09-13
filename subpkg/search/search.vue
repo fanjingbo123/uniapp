@@ -6,7 +6,7 @@
 
 		<view class="sugg-list">
 			<view class="sugg-item" v-for="(item, i) in searchResults" :key="i" @click="gotoDetail(item)">
-				<view class="medicine-name"></view>
+				<view class="medicine-name">{{item.medicine_name}}</view>
 				<uni-icons type="arrowright" size="16"></uni-icons>
 			</view>
 		</view>

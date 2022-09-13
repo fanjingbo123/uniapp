@@ -135,11 +135,91 @@
 							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
 							medicine_name: '降糖药',
 							medicine_msg: ''
+						}, {
+							medicine_id: 17,
+							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
+							medicine_name: '降糖药',
+							medicine_msg: ''
+						}, {
+							medicine_id: 17,
+							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
+							medicine_name: '降糖药',
+							medicine_msg: ''
+						}, {
+							medicine_id: 17,
+							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
+							medicine_name: '降糖药',
+							medicine_msg: ''
+						}, {
+							medicine_id: 17,
+							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
+							medicine_name: '降糖药',
+							medicine_msg: ''
+						}, {
+							medicine_id: 17,
+							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
+							medicine_name: '降糖药',
+							medicine_msg: ''
+						}, {
+							medicine_id: 17,
+							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
+							medicine_name: '降糖药',
+							medicine_msg: ''
+						}, {
+							medicine_id: 17,
+							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
+							medicine_name: '降糖药',
+							medicine_msg: ''
+						}, {
+							medicine_id: 17,
+							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
+							medicine_name: '降糖药',
+							medicine_msg: ''
 						}]
 					},
 					{
 						cate: '降脂药',
 						List: [{
+							medicine_id: 18,
+							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
+							medicine_name: '降脂药',
+							medicine_msg: ''
+						},{
+							medicine_id: 18,
+							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
+							medicine_name: '降脂药',
+							medicine_msg: ''
+						},{
+							medicine_id: 18,
+							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
+							medicine_name: '降脂药',
+							medicine_msg: ''
+						},{
+							medicine_id: 18,
+							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
+							medicine_name: '降脂药',
+							medicine_msg: ''
+						},{
+							medicine_id: 18,
+							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
+							medicine_name: '降脂药',
+							medicine_msg: ''
+						},{
+							medicine_id: 18,
+							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
+							medicine_name: '降脂药',
+							medicine_msg: ''
+						},{
+							medicine_id: 18,
+							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
+							medicine_name: '降脂药',
+							medicine_msg: ''
+						},{
+							medicine_id: 18,
+							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
+							medicine_name: '降脂药',
+							medicine_msg: ''
+						},{
 							medicine_id: 18,
 							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
 							medicine_name: '降脂药',
@@ -169,7 +249,7 @@
 					{
 						cate: '其他药物',
 						List: []
-					},
+					}
 				],
 				active: 0
 			};
