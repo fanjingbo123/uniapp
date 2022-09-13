@@ -51,12 +51,12 @@
 
 				console.log(res)
 
-				// if (res.meta.status !== 200) {
-				// 	uni.$showMsg()
-				// }
+				if (res.meta.status !== 200) {
+					uni.$showMsg()
+				}
 
-				console.log(res.meta.status)
-				console.log(res.message)
+				// console.log(res.meta.status)
+				// console.log(res.message)
 				this.swiperList = res.message
 			}
 		}

@@ -16,16 +16,25 @@
 		"pages": [{
 			"path": "detail/detail",
 			"style": {
-				"navigationBarTitleText": "",
+				"navigationBarTitleText": "true",
 				"enablePullDownRefresh": false
 			}
 
-		}]
+		}    ,{
+                    "path" : "search/search",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
 	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "服药小哥",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarBackgroundColor": "#e6e6e6",
 		"backgroundColor": "#5f635f"
 	},
 	"tabBar": {

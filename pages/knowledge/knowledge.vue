@@ -1,5 +1,10 @@
 <template>
 	<view>
+		<!-- 自定义搜索组件 -->
+		<view class="searchBox">
+			<medicine-search @click="gotoSearch"></medicine-search>
+		</view>
+
 		<view class="scroll-view-container">
 			<!-- 左侧滑动区 -->
 			<scroll-view class="left-scroll-view" scroll-y="true" :style="{height: wh + 'px'}">
@@ -51,62 +56,62 @@
 							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
 							medicine_name: '降压药',
 							medicine_msg: ''
-						},{
+						}, {
 							medicine_id: 2,
 							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
 							medicine_name: '降压药',
 							medicine_msg: ''
-						},{
+						}, {
 							medicine_id: 3,
 							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
 							medicine_name: '降压药',
 							medicine_msg: ''
-						},{
+						}, {
 							medicine_id: 4,
 							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
 							medicine_name: '降压药',
 							medicine_msg: ''
-						},{
+						}, {
 							medicine_id: 5,
 							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
 							medicine_name: '降压药',
 							medicine_msg: ''
-						},{
+						}, {
 							medicine_id: 6,
 							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
 							medicine_name: '降压药',
 							medicine_msg: ''
-						},{
+						}, {
 							medicine_id: 7,
 							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
 							medicine_name: '降压药',
 							medicine_msg: ''
-						},{
+						}, {
 							medicine_id: 8,
 							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
 							medicine_name: '降压药',
 							medicine_msg: ''
-						},{
+						}, {
 							medicine_id: 9,
 							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
 							medicine_name: '降压药',
 							medicine_msg: ''
-						},{
+						}, {
 							medicine_id: 10,
 							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
 							medicine_name: '降压药',
 							medicine_msg: ''
-						},{
+						}, {
 							medicine_id: 11,
 							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
 							medicine_name: '降压药',
 							medicine_msg: ''
-						},{
+						}, {
 							medicine_id: 12,
 							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
 							medicine_name: '降压药',
 							medicine_msg: ''
-						},{
+						}, {
 							medicine_id: 13,
 							medicine_url: 'https://mmbiz.qpic.cn/mmbiz_png/J9oTXkdKsW80C2VQs0icYG0rK9nd8kqslA3mZIvystzqcic8L4LRtyb4bkNJLWFZnqaR4VlGibjHFyR38k9nmjqaA/0?wx_fmt=png',
 							medicine_name: '降压药',
@@ -172,7 +177,8 @@
 		onLoad() {
 			const sysInfo = uni.getSystemInfoSync()
 			// console.log(sysInfo)
-			this.wh = sysInfo.windowHeight
+			this.wh = sysInfo.windowHeight - 50
+			// medicineList = cateList[0]
 		},
 		methods: {
 			activeChange(i) {
@@ -180,10 +186,16 @@
 				//切换分类
 				this.medicineList = this.cateList[i].List
 			},
-				
+
 			gotoDetail(item) {
 				uni.navigateTo({
-					url:'/subpkg/detail/detail?item=' +item
+					url: '/subpkg/detail/detail?item=' + item
+				})
+			},
+
+			gotoSearch() {
+				uni.navigateTo({
+					url: '/subpkg/search/search'
 				})
 			}
 		}
@@ -227,37 +239,39 @@
 		display: flex;
 		padding: 10px 5px;
 		border-bottom: 1px solid #f0f0f0;
-		
+
 		.medicine-msg-left {
 			margin-right: 5px;
+
 			.medicine-pic {
 				width: 200rpx;
 				height: 200rpx;
 				display: block;
 			}
 		}
+
 		.medicine-msg-right {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-			
+
 			.medicine-name {
 				font-size: 16px;
 				line-height: 50%;
 			}
-			
+
 			.medicine-info-box {
 				.medicine-info {
 					font-size: 13px;
 				}
 			}
 		}
-		// display: flex;
-		// height: 50rpx;
-		
-		// .medicine_img {
-		// 	width: 25rpx;
-		// 	height: 80%;
-		// }
+	}
+	
+	
+	.searchBox{
+		position: sticky;
+		top: 0;
+		z-index: 999;
 	}
 </style>
