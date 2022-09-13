@@ -10,7 +10,16 @@
 		}, {
 			"path": "pages/my/my"
 		}
-	],
+	    ,{
+            "path" : "pages/medicineManage/medicineManage",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "药物管理",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"subPackages": [{
 		"root": "subpkg",
 		"pages": [{
