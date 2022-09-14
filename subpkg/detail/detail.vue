@@ -23,7 +23,11 @@
 </template>
 
 <script>
+	import { mapState, mapMutations }  from 'vuex'
 	export default {
+		computed: {
+			...mapState('m_medicineManage', [])
+		},
 		data() {
 			return {
 				medicine_info: {},
@@ -54,11 +58,29 @@
 
 			// 	this.medicine_info = res.message
 			// }
+			...mapMutations('m_medicineManage', ['addToMedicineList']),
 			onClick(e) {
 				if(e.content.text === '药物管理'){
 					uni.navigateTo({
 						url: '/pages/medicineManage/medicineManage'
 					})
+				}
+			},
+			buttonClick(e) {
+				console.log(e)
+				if(e.content.text === '加入我的药物'){
+					//组织药物的信息对象
+					
+					const medicine = {
+						medicine_id: this.medicine_info.medicine_id,
+						medicine_name: this.medicine_info.medicine_name,
+						medicine_url: this.medicine_info.medicine_url,
+						medicine_msg: this.medicine_info.medicine_msg,
+						// medicine_
+					}
+					
+					//调用addToMedicineList
+					this.addToMedicineList(medicine)
 				}
 			}
 		}
