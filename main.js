@@ -1,4 +1,5 @@
 import App from './App'
+import store from '@/store/store.js'
 
 //导入网络请求的包
 import {
@@ -8,6 +9,7 @@ import {
 uni.$http = $http
 
 //请求的根路径
+//后面要修改
 $http.baseUrl = 'https://api-ugo-web.itheima.net'
 
 
@@ -33,9 +35,12 @@ uni.$showMsg = function(title = '请稍后再试', duration = 1500) {
 // #ifndef VUE3
 import Vue from 'vue'
 Vue.config.productionTip = false
+
 App.mpType = 'app'
+
 const app = new Vue({
-	...App
+	...App,
+	store
 })
 app.$mount()
 // #endif
