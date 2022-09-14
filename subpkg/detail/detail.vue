@@ -42,7 +42,6 @@
 					color: '#000000'
 				}]
 			};
-			Î
 		},
 		onLoad(options) {
 			const medicine_id = options.medicine_id
